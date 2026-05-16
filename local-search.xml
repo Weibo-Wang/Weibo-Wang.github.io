@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2026/05/16/hello-world/"/>
+    <url>/2026/05/16/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>本网站建立于2026年5月16日。</p><span id="more"></span><p>原想将线性代数第一讲和第二讲的笔记做出来的，可做完网站后我已经没有时间来做这件事了。故本周仍然只能将之前笔记的pdf版本放上去了。</p><p>张宇1000题高数第一讲：</p><div class="row">    <embed src="/pdf/sec1.pdf" width="100%" height="550" type="application/pdf"></div><p>泰勒公式的局部和全局性质：</p><div class="row">    <embed src="/pdf/main.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
