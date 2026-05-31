@@ -19,23 +19,21 @@
   <meta name="author" content="Meromorphism">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一节 本节介绍了向量的定义并给出解释，略。 第二节 耳熟能详的矩阵的运算，略。 第三节 本节介绍了这样的一种观点：线性变换对于向量的作用可以从图像处理的角度来理解，但并不详尽，略。 第四节 用 $2x&#x3D;3$ 来答案反推过程式地可以用 $A^{-1}\beta$ 来求出方程 $AX&#x3D;\beta$ 的解。 总结 All in all，本章不必深究，大致看看、书中提到的概念知道即可。">
+    <meta name="description" content="等价无穷小、高阶无穷小与夹逼定理 等价无穷小的本质就是夹逼定理">
 <meta property="og:type" content="website">
-<meta property="og:title" content="第0讲">
-<meta property="og:url" content="http://weibo-wang.github.io/hidden/%E7%AC%AC0%E8%AE%B2.html">
+<meta property="og:title" content="page.title">
+<meta property="og:url" content="http://weibo-wang.github.io/hidden/%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一节 本节介绍了向量的定义并给出解释，略。 第二节 耳熟能详的矩阵的运算，略。 第三节 本节介绍了这样的一种观点：线性变换对于向量的作用可以从图像处理的角度来理解，但并不详尽，略。 第四节 用 $2x&#x3D;3$ 来答案反推过程式地可以用 $A^{-1}\beta$ 来求出方程 $AX&#x3D;\beta$ 的解。 总结 All in all，本章不必深究，大致看看、书中提到的概念知道即可。">
+<meta property="og:description" content="等价无穷小、高阶无穷小与夹逼定理 等价无穷小的本质就是夹逼定理">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-23T09:51:00.000Z">
-<meta property="article:modified_time" content="2026-05-23T09:53:07.928Z">
+<meta property="article:published_time" content="2026-05-30T12:09:02.490Z">
+<meta property="article:modified_time" content="2026-05-30T09:23:57.247Z">
 <meta property="article:author" content="Meromorphism">
-<meta property="article:tag" content="数学">
-<meta property="article:tag" content="线性代数">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>第0讲 - Hexo</title>
+  <title>page.title - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -123,45 +121,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
+              <a class="nav-link" href="/math-diy/" target="_self">
+                <i class="iconfont icon-calculator"></i>
+                <span>AI助手</span>
               </a>
             </li>
           
@@ -211,52 +173,10 @@
           
           
             <div class="col-4 mobile-grid-cell">
-              <a href="/archives/" target="_self">
+              <a href="/math-diy/" target="_self">
                 <div class="mobile-grid-item">
-                  <i class="iconfont icon-archive-fill"></i>
-                  <span>归档</span>
-                </div>
-              </a>
-            </div>
-          
-        
-          
-          
-          
-          
-            <div class="col-4 mobile-grid-cell">
-              <a href="/categories/" target="_self">
-                <div class="mobile-grid-item">
-                  <i class="iconfont icon-category-fill"></i>
-                  <span>分类</span>
-                </div>
-              </a>
-            </div>
-          
-        
-          
-          
-          
-          
-            <div class="col-4 mobile-grid-cell">
-              <a href="/tags/" target="_self">
-                <div class="mobile-grid-item">
-                  <i class="iconfont icon-tags-fill"></i>
-                  <span>标签</span>
-                </div>
-              </a>
-            </div>
-          
-        
-          
-          
-          
-          
-            <div class="col-4 mobile-grid-cell">
-              <a href="/about/" target="_self">
-                <div class="mobile-grid-item">
-                  <i class="iconfont icon-user-fill"></i>
-                  <span>关于</span>
+                  <i class="iconfont icon-calculator"></i>
+                  <span>AI助手</span>
                 </div>
               </a>
             </div>
@@ -298,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="第0讲"></span>
+            <span id="subtitle" data-typed-text="page.title"></span>
           
         </div>
 
@@ -328,16 +248,8 @@
                 
 
 <article class="page-content">
-  <h2 id="第一节">第一节</h2>
-<p>本节介绍了向量的定义并给出解释，略。</p>
-<h2 id="第二节">第二节</h2>
-<p>耳熟能详的矩阵的运算，略。</p>
-<h2 id="第三节">第三节</h2>
-<p>本节介绍了这样的一种观点：线性变换对于向量的作用可以从图像处理的角度来理解，但并不详尽，略。</p>
-<h2 id="第四节">第四节</h2>
-<p>用 $2x=3$ 来答案反推过程式地可以用 $A^{-1}\beta$ 来求出方程 $AX=\beta$ 的解。</p>
-<h2 id="总结">总结</h2>
-<p>All in all，本章不必深究，大致看看、书中提到的概念知道即可。</p>
+  <h1 id="等价无穷小、高阶无穷小与夹逼定理">等价无穷小、高阶无穷小与夹逼定理</h1>
+<p>等价无穷小的本质就是夹逼定理</p>
 
 
   
